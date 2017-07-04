@@ -297,3 +297,62 @@
 hr{
 	width: 80%;
 }
+
+
+@media only screen and (max-width: 1024px) {
+	div{
+		box-sizing: border-box;	
+	}
+
+	#header{
+		display: none;
+	}
+
+	#left{
+		padding: 4px;
+		padding-top: 150px;
+		display: block;
+		width: 100%;
+		font-size:4em;
+
+	}
+
+	#left #social{
+			/*border: 1px solid red;*/
+			width: 50%;
+			list-style-type: none;
+			margin: 0 auto;
+			margin-top: 150px;
+			/*float: right;*/
+		}
+
+		#left #social li{
+			display: inline-block;
+			margin-right: 50px;
+			margin-left: 20px;
+			width: 10%;
+			height: 30px;
+		}
+
+		#left i{
+			width: 30px;
+			height: 30px;
+			padding-right: 20px;
+		}
+
+
+	#left h2{
+		font-size: 1.3em;
+				font-weight: bolder;
+	}
+
+	#about{
+		display: block;
+	}
+
+	#right{
+		display: none;
+	}
+
+
+}
