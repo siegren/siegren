@@ -6,7 +6,7 @@
 
 		.container{
 			width: 100%;
-			max-width: 1000px;
+			max-width: 	1000px;
 			position: relative;
 		}
 		#header{
@@ -309,11 +309,11 @@ hr{
 	}
 
 	#left{
-		padding: 4px;
-		padding-top: 150px;
+		padding: 10px;
+		/*padding-top: 150px;*/
 		display: block;
 		width: 100%;
-		font-size:4em;
+		/*font-size:4em;*/
 
 	}
 
@@ -322,22 +322,16 @@ hr{
 			width: 50%;
 			list-style-type: none;
 			margin: 0 auto;
-			margin-top: 150px;
+			margin-top: 20px;
 			/*float: right;*/
 		}
 
 		#left #social li{
 			display: inline-block;
-			margin-right: 50px;
-			margin-left: 20px;
+			margin-right: 10%;
+			/*margin-left: 20px;*/
 			width: 10%;
 			height: 30px;
-		}
-
-		#left i{
-			width: 30px;
-			height: 30px;
-			padding-right: 20px;
 		}
 
 
