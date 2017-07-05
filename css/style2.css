@@ -471,6 +471,7 @@ body{
 		display: block;
 		position: relative;
 		z-index: 800;
+		height: auto;
 	}
 
 	.close{
