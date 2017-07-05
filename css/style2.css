@@ -286,6 +286,8 @@
 			z-index: 1000;
 			display:none;
 			background-color: #fff;
+			overflow: auto;
+			z-index: 1000;
 			/*background-position: fixed;*/
 			/*background-attachment: fixed*/
 		}

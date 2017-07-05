@@ -22,7 +22,7 @@
            
       $('#portfolio').animate({height:"100vh"}, 300);   
           $('#portfolio').css({"display":"block"}); 
-            $('body').css({"overflow":"auto"});
+            // $('#portfolio').css({"overflow":"auto"});
                         // $('#portfolio').css({"top":"0"});
                             $('#about').hide();
                             $('nav').hide();
