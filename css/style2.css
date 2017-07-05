@@ -478,8 +478,11 @@ body{
 	}
 
 	#navigation{
-		z-index: 1000;
+/*		position: absolute;
+		bottom: 0;*/
+		z-index: 100;
 	}
+
 
 	#left{
 		width: 100%;
