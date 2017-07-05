@@ -16,31 +16,68 @@
     })
     // for ruby
 
-    $('.ruby').click(function(){
+    $('.portfolio').click(function(){
 
-      $('#ruby').animate({height:"100vh"}, 300);    
-        $('#ruby').css({"display":"block"});
+
+           
+      $('#portfolio').animate({height:"100vh"}, 300);   
+          $('#portfolio').css({"display":"block"}); 
+                        // $('#header').css({"display":"none"});
+                            $('#about').hide();
+                            $('nav').hide();
+
+
     })
 
-    $('.close-black').click(function(){
+    $('.close-m').click(function(){
+         // $('#header').css({"display":"block"});
+         //          $('#left').css({"display":"block"});
+               // $('#about').css({"display":"block"});
+                   $('#about').show();
+                     $('nav').show();
+          $('#portfolio').animate({height:"0vh"}, 300, function(){
+        $('#portfolio').css({"display":"none"});
 
-      $('#ruby').animate({height:"0vh"}, 300, function(){
-        $('#ruby').css({"display":"none"});
       });   
         
     })
 
-    // for php
-    $('.php').click(function(){
+        $('.close-x').click(function(){
+                         $('nav').show();
+          $('#portfolio').animate({height:"0vh"}, 300, function(){
+        $('#portfolio').css({"display":"none"});
 
-      $('#php').animate({height:"100vh"}, 300);   
-        $('#php').css({"display":"block"});
+      });   
+        
     })
 
-    $('.close-black').click(function(){
+    // for skills
+    $('.skills').click(function(){
 
-      $('#php').animate({height:"0vh"}, 300, function(){
-        $('#php').css({"display":"none"});
+      $('#skills').animate({height:"100vh"}, 300);   
+        $('#skills').css({"display":"block"});
+        $('#about').hide();
+          $('nav').hide();
+           // $('#header').css({"display":"none"});
+           //                  $('#about').css({"display":"none"});
+    })
+
+    $('.close-m').click(function(){
+            // $('#header').css({"display":"block"});
+            //      $('#about').css({"display":"block"});
+           $('#about').show();
+             $('nav').show();
+      $('#skills').animate({height:"0vh"}, 300, function(){
+        $('#skills').css({"display":"none"});
+      });   
+        
+    })
+
+        $('.close-x').click(function(){
+
+             $('nav').show();
+      $('#skills').animate({height:"0vh"}, 300, function(){
+        $('#skills').css({"display":"none"});
       });   
         
     })

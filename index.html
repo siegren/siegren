@@ -18,19 +18,31 @@
 <body>
 
 <div id="header">
-	<div class="container">
+	
 		<a href="#header"><img class="logo" src="img/logo.png"></a>
-		<h1>Jessie Nerona </h1>	
+		<div id="my-profile">
+					<img id="profile" src="img/profile.png">		
+		</div>
+
+		<h1 id="name">Jessie Nerona </h1>	
 		<a id="about-link" href="#about">about me</a>		
-	</div>
-			<ul>
-			<li><a href="#ruby" class="ruby">Ruby</a></li>
-			<li><a href="#php" class="php">PHP</a></li>
-			<li><a href="#html" class="html-css">HTML/CSS</a></li>			
-		</ul>
+
+		<div id="navigation">
+			<nav>
+			
+			<a href="#" class="portfolio">PORTFOLIO</a>
+			<a href="#" class="skills">SKILLS</a>
+
+			</nav>
+		</div>
+
+
+
+		
 </div>
 
 <div id="about">
+
 	<div id="left">
 		<div id="about-me">
 			<h1>Jessie Nerona</h1>
@@ -67,15 +79,19 @@
 
 </div>
 
-	<div id="ruby">	
+<!--  portfolio -->
+
+		<div id="portfolio" >
+				<h1 class="title"><span>my</span> WORKS</h1>	
+							<span class="close-x">x</span>
+									<span class="close-m">x</span>
 		<div class="container">	
-			<span class="close-black">x</span>	
 
 					<div class="box move-down">
-						<img src="img/ruby.png">
+						<img src="img/parkinglot.png">
 								<div class="des">
-								<h1>Converter</h1>
-								<p>Just like my Area-Calculator gem, this gem is also created during the Coding Bootcamp. It is a converter of units of measurements such as meters to kilometers, celsius to fahrenheit, and so on. </p>
+								<h1>Park Now - Parking Lot Locator</h1>
+								<p>Park Now is a simple app created using ruby anc CVS database. It helps you look for the nearest parking lot. </p>
 								<br />
 								<a href="https://github.com/siegren/vivixx/tree/master/area">GITHUB</a>	
 
@@ -87,13 +103,59 @@
 								<hr>
 								<br />	
 									</div>
+		
 
-												
+										
 							<div class="box">
-								<img src="img/ruby.png">
+								<img src="img/numbergame.png">
 								<div class="des">
 								<h1>Lottery/Number Game</h1>
 								<p>This is a number game made using ruby. You will guess the three mystery numbers, from 1 to 9. If you guess atleast one number correctly you win. </p>
+									<br />
+								<a href="https://github.com/siegren/vivixx/tree/master/area">GITHUB</a>		
+								</div>
+								<div class="clear">	</div>
+								<br />
+								<hr>
+								<br />		
+
+							</div>
+
+							<div class="box">
+								<img src="img/atm.png">
+								<div class="des">
+								<h1>Automatic Teller Machine</h1>
+								<p>One of our challenges during the coding bootcamp is to create an ATM. This is my output.</p>
+									<br />
+								<a href="https://github.com/siegren/vivixx/tree/master/area">GITHUB</a>		
+								</div>
+								<div class="clear">	</div>
+								<br />
+								<hr>
+								<br />		
+
+							</div>
+
+							<div class="box">
+								<img src="img/voting.png">
+								<div class="des">
+								<h1>Vivixx Voting System</h1>
+								<p>This is our day 3 challenge during the codding bootcamp an application of array and hashes</p>
+									<br />
+								<a href="https://github.com/siegren/vivixx/tree/master/area">GITHUB</a>		
+								</div>
+								<div class="clear">	</div>
+								<br />
+								<hr>
+								<br />		
+
+							</div>
+
+							<div class="box">
+								<img src="img/restaurant.png">
+								<div class="des">
+								<h1>Siegren's Restaurant</h1>
+								<p>This program is our day 1 challenge. A simple ordering system of a restaurant. </p>
 									<br />
 								<a href="https://github.com/siegren/vivixx/tree/master/area">GITHUB</a>		
 								</div>
@@ -114,39 +176,13 @@
 							
 							</div>
 										<div class="clear">	</div>
-										
+															<br />
+								<hr>
+								<br />		
 
 					</div>
 
-
-		</div>
-
-
-	</div>
-
-		<div id="php">	
-		<div class="container">	
-			<span class="close-black">x</span>	
-						<div class="box move-down">
-<img src="img/zen.png">
-								<div class="des">
-								<h1>PHP Project</h1>
-								<p>CSS Zen Garden is a website where you can practice your skill in CSS. I downloaded the HTML file and made my Zen Garden CSS Design. This is also made during the Coding Bootcamp. </p>
-								<br />
-								<a href="https://github.com/siegren/vivixx/tree/master/area">GITHUB</a>		
-								</div>
-								<div class="clear">	</div>
-							
-							</div>
-		</div>
-
-
-	</div>
-
-		<div id="html">	
-		<div class="container">	
-			<span class="close-black">x</span>	
-			<div class="box move-down">
+								<div class="box move-down">
 <img src="img/zen.png">
 								<div class="des">
 								<h1>Zen Garden CSS Design</h1>
@@ -157,10 +193,92 @@
 								<div class="clear">	</div>
 							
 							</div>
+
+												<div class="box move-down">
+						<img src="img/ruby.png">
+								<div class="des">
+								<h1>Ruby Gem - Converter</h1>
+								<p>Just like my Area-Calculator gem, this gem is also created during the Coding Bootcamp. It is a converter of units of measurements such as meters to kilometers, celsius to fahrenheit, and so on. </p>
+								<br />
+								<a href="https://github.com/siegren/vivixx/tree/master/area">GITHUB</a>	
+
+								</div>
+
+
+										<div class="clear">	</div>
+													<br />
+								<hr>
+								<br />	
+									</div>
+
+
 		</div>
 
 
 	</div>
+	
+
+		<!-- portfolio ending -->
+
+
+<div id="skills" >
+				<h1 class="title"><span>my</span> SKILLS</h1>	
+							<span class="close-x">x</span>
+		<div class="container">	
+		<div id="skill-big-box">
+		
+		<div class="skill-box">
+			<img src="img/ruby.png">
+		</div>
+
+				<div class="skill-box">
+			<img src="img/ruby.png">
+		</div>
+
+				<div class="skill-box">
+			<img src="img/ruby.png">
+		</div>
+
+		</div>
+		<div class="skill-box">
+			<img src="img/ruby.png">
+		</div>
+
+				<div class="skill-box">
+			<img src="img/ruby.png">
+		</div>
+
+				<div class="skill-box">
+			<img src="img/ruby.png">
+		</div>
+
+
+<div class="skill-box">
+			<img src="img/ruby.png">
+		</div>
+
+				<div class="skill-box">
+			<img src="img/ruby.png">
+		</div>
+
+				<div class="skill-box">
+			<img src="img/ruby.png">
+		</div>
+
+
+		</div>
+
+
+					
+
+
+		</div>
+
+
+	</div>
+
+
+
 </body>
 
 

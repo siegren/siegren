@@ -2,6 +2,11 @@
 		body{
 			font-size: 1em;
 			font-family: 'Play', sans-serif;
+			overflow: hidden;
+		}
+
+		*{
+			box-sizing: border-box;
 		}
 
 		.container{
@@ -9,42 +14,64 @@
 			max-width: 	1000px;
 			position: relative;
 		}
+
 		#header{
 			width: 100%;
 			height: 100vh;
+			padding-left:10px;
+			padding-right:10px;
 			background-image: url('../img/bg.png');
 			background-position: center;
 			background-size: cover;
 			position: relative;
+			overflow: hidden;
 		}
 
-		#header h1{
-			font-size: 5em;
+		#name{
+			font-size: 4em;
 			font-weight: bolder;
 			text-align: center;
-			margin-top:100px;
+			margin-top:10px;
 			color: #fff;
-			height: 150px;
-			line-height: 150px;
+/*			height: 150px;
+			line-height: 150px;*/
+			padding-bottom: 15px;
 			/*background-color: #000;*/
 		}
 
-		.close{
+		#my-profile{
+			width: 250px;
+			margin: 0 auto;
+		}
+		#profile{
+			width: 250px;
+			height: 250px;
+			/*max-width: 100%;*/
+			border-radius: 150px;
+			border: 3px solid #fff;
+		}
+
+
+		.close, .close-x, .close-m{
 			cursor: pointer;
 			position: absolute;
-			right: 50px;
-			top: 50px;
+			right: 15px;
+			z-index: 1000;
+			top: 20px;
 			font-size: 1.2em;
 			color: #fff;
-			border: 1px solid #fff;
+			/*border: 1px solid #fff;*/
 			width: 25px;
 			line-height: 	25px;
 			height: 	25px;
-			border-radius: 	20px;
+			/*border-radius: 	20px;*/
 			text-align: center;
 
 		}
 
+		.close-m{
+			display: none;
+		}
 
 		.close-black{
 			cursor: pointer;
@@ -82,42 +109,47 @@
 		}
 
 		.logo{
+			margin-left: 10%;
 			width: 80px;
-			height: 80px;
+			height: 95px;
 			padding-top: 15px;
 			border: 5px solid #000;
 			background-color: #000;
 		}
-		#header ul{
-			position: absolute;
+
+		#navigation{
+			width: 100%;
+			position: fixed;
 			bottom: 0;
-			left: 38%;
+			left:0;
+				background-color: #000;
+				padding-top:10px;
+			/*z-index: 1000;*/
 		}
 
-		#header ul li{
-			display: inline-block;
-			width: 80px;
-			/*height: 40px;*/
-			text-align: center;
+		nav{
+			width: 40%;
+			margin: 0 auto;
+			padding: 0 10px;
+			background-color: #000;
+
+		}
+
+
+		nav a{
+			float:left;
+			display: block;
+			font-weight: bolder;
+			width: 100px;
+			min-width: 50%;
+			height: 40px;
 			line-height: 40px;
 			background-color: #fff;
-			margin-right: 30px;
-		}
-
-		#header ul li a{
-			text-decoration: none;;
 			color: #000;
-			font-weight: bolder;
-			background-color: #fff;
-			display: block;
-			border-top: 5px solid #fff;
-			width: 100%;
-			padding-left: 10px;
-			padding-right: 10px;
-		}
-
-		#header ul li a:hover{
-			border-top: 5px solid #000;
+			text-decoration: none;
+			text-align: center;
+			border: 3px solid #000;
+			border-bottom-style: none;
 		}
 
 		.container{
@@ -131,7 +163,9 @@
 			display: none;
 			width: 100%;
 			height: 100vh;
-			position:relative;
+			position:absolute;
+			z-index: 1000;
+			top:0;
 			background-color: black;
 		}
 
@@ -145,29 +179,32 @@
 			height: 100vh;
 			background-color: #fff;
 			color: #000;
+			padding: 10px;
+			padding-right: 30px;
+			overflow: hidden;
 		
 		}
 
 		#left h1{
 			font-size: 2em;
 			margin-top: 50px;
-			margin-left: 40px;
+			margin-left: 30px;
 		}
 
 		#left h2{
 			font-size: 1.5em;
 			margin-top: 40px;
-			margin-left: 40px;			
+			margin-left: 30px;			
 		}
 
 		#left p{
-			margin-left: 80px;
-			margin-right: 20px;
+			margin-left: 50px;
+/*			margin-right: 5px;*/
 			padding-top:15px;			
 		}
 
 		#left .what-up{
-			margin-left: 80px;
+			margin-left: 50px;
 			margin-top: 20px;
 			list-style-type: disc;
 		}
@@ -192,7 +229,7 @@
 		}
 
 		#right{
-		
+			overflow: hidden;
 			float: right;
 			width: 0%;
 			height: 100vh;
@@ -231,7 +268,7 @@
 		}
 
 		#right button{
-			width: 104%;
+			width: 100%;
 			height: 30px;
 			color: #fff;
 			background-color: 	#000;
@@ -239,20 +276,25 @@
 			border: 1px solid #fff;
 		}
 
-		#ruby, #php, #html{
+		#portfolio, #skills{
 			width: 100%;
-			height: 0;
+			height: 0vh;
+			padding: 10px;
 			position: absolute;
+			left: 0;
 			bottom:0;
 			z-index: 1000;
 			display:none;
 			background-color: #fff;
-			}
+			/*background-position: fixed;*/
+			/*background-attachment: fixed*/
+		}
 
 
 .box{
 	width: 100%;
 	font-size: 1em;
+	padding: 10px;
 	padding-bottom: 0px;
 	padding-top: 10px;
 	border: 1px solid #fff;
@@ -268,14 +310,18 @@
 	float: left;
 	width: 150px;
 	height: 150px;
+	max-width: 100%;
 }
 
 .box .des{
 	float: left;
 	padding-left: 15px;
+	padding-top: 10px;
+	text-align: justify;
 }
 .box .des p{
 	width: 500px;
+	max-width: 100%;
 	margin-top: 10px;
 }
 
@@ -291,45 +337,189 @@
 }
 
 .move-down{
-	padding-top: 100px;
+	/*padding-top: 100px;*/
 }
 
 hr{
 	width: 80%;
+	margin: 0;
+}
+
+.title{
+	font-size: 2em;
+	color: #fff;
+	background-color: #000;
+	padding: 10px;
+	width: 100%;
+
+}
+
+#skill-big-box{
+	/*border: 1px solid red;*/
+	margin: auto;
+	width: auto;
+	margin-top: 20px;
+}
+.skill-box{
+	width:150px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	float: left;
+	/*height: 150px;*/
+	/*border: 1px solid red;*/
+}
+
+.skill-box img{
+	width: 100%;
+	height: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+
+body{
+	overflow: auto;
+}
+/*	#header{
+		display: none;
+	}*/
+	#name{
+		font-size: 3em;
+	}
+
+	#my-profile{
+		margin-top: 70px;
+	}
+
+			nav{
+			width: 100%;
+			margin: 0 auto;
+			padding: 0 10px;
+
+		}
+
+	#about{
+		display: block;
+		position: relative;
+		z-index: 800;
+	}
+
+	.close{
+		display: none;
+	}
+
+	#navigation{
+		z-index: 1000;
+	}
+
+	#left{
+		width: 100%;
+		position: relative;
+	}
+
+	#right{
+		width: 100%;
+				position: relative;
+	}
+
+	#about-link{
+		display: none;
+	}
+
+	.box{
+	width: 100%;
+	font-size: 1em;
+	padding-bottom: 0px;
+	padding-top: 10px;
+	border: 1px solid #fff;
+
 }
 
 
-@media only screen and (max-width: 1024px) {
+.box img{
+	float: left;
+	width: 150px;
+	height: 150px;
+	padding-left: 15px;
+
+}
+
+.box .des{
+	float: left;
+	padding-left: 15px;
+}
+.box .des p{
+/*	width: 500px;*/
+	width: 100%;
+	margin-top: 10px;
+	text-align: justify;
+}
+
+.box .des h1{
+	font-size: 1.5em;
+}
+.box a{
+	clear: both;
+	padding: 8px;
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+}
+
+.skill-box{
+	width:80px;
+}
+
+.close-m{
+	display: block;
+}
+
+		hr{
+			width: 100%;
+			margin: 0 auto;
+		}
+/*#about{
+	display: block;
+}
+
+#portfolio{
+	display: block;
+	position: relative;
+	height: 100vh;
+
+}*/
+
+}
+
+
+/*@media only screen and (max-width: 1024px) {
 	div{
 		box-sizing: border-box;	
-	}
-
+	ax
 	#header{
 		display: none;
 	}
 
 	#left{
 		padding: 10px;
-		/*padding-top: 150px;*/
 		display: block;
 		width: 100%;
-		/*font-size:4em;*/
+
 
 	}
 
 	#left #social{
-			/*border: 1px solid red;*/
+
 			width: 50%;
 			list-style-type: none;
 			margin: 0 auto;
 			margin-top: 20px;
-			/*float: right;*/
+
 		}
 
 		#left #social li{
 			display: inline-block;
 			margin-right: 10%;
-			/*margin-left: 20px;*/
+	
 			width: 10%;
 			height: 30px;
 		}
