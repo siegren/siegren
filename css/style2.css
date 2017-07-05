@@ -10,8 +10,8 @@
 		}
 
 		  @keyframes blink {
-      0% {top: 0px;}
-      100% {bottom: 0px;}
+      0% {padding-top: 0px;}
+      100% {padding-top: 3px;}
     }
  
        
@@ -27,12 +27,12 @@
         animation-iteration-count: infinite;
         animation-delay: 0s;
         animation-timing-function: ease-in-out;
-        position: absolute;
+        /*position: absolute;*/
 		}
 
 		#arrow{
 					display: none;
-					position:relative;
+					/*position:relative;*/
 			width: 30px;
 			height:33px;
 			margin: 0 auto;
