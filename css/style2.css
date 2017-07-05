@@ -9,6 +9,35 @@
 			box-sizing: border-box;
 		}
 
+		  @keyframes blink {
+      0% {top: 0px;}
+      100% {bottom: 0px;}
+    }
+ 
+       
+
+		.arrow-down{
+
+			width: 30px;
+			/*border: 1px solid #fff;*/
+			/*border-radius: 40px;*/
+			margin: 0 auto;
+        animation-name: blink;
+        animation-duration: 0.8s;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+        animation-timing-function: ease-in-out;
+        position: absolute;
+		}
+
+		#arrow{
+					display: none;
+					position:relative;
+			width: 30px;
+			height:33px;
+			margin: 0 auto;
+		}
+
 		.container{
 			width: 100%;
 			max-width: 	1000px;
@@ -272,6 +301,7 @@
 			background-color: 	#000;
 			border-radius: 	2px;
 			padding-left: 15px;
+			color: #fff;
 		}
 
 		#right button{
@@ -366,8 +396,8 @@ hr{
 
 #skill-big-box{
 	/*border: 1px solid red;*/
-	margin: auto;
-	width: auto;
+	width: 90%;
+	margin: 0 auto;
 	margin-top: 20px;
 }
 .skill-box{
@@ -390,6 +420,9 @@ body{
 	overflow: auto;
 }
 
+#arrow{
+	display: block;
+}
 #profile{
 	width: 50%;
 	height: 50%;
@@ -503,6 +536,10 @@ body{
 	text-decoration: none;
 }
 
+#skill-big-box{
+	width: 100%;
+	padding-left: 6%;
+}
 .skill-box{
 	width:80px;
 }
