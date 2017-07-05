@@ -379,6 +379,11 @@ hr{
 body{
 	overflow: auto;
 }
+
+#profile{
+	width: 50%;
+	height: 50%;
+}
 /*	#header{
 		display: none;
 	}*/
@@ -387,7 +392,20 @@ body{
 	}
 
 	#my-profile{
+			width: 50%;
+			height:auto;
+			margin: 0 auto;
+			/*border: 1px solid red;*/
+
+		}
+
+	#my-profile{
 		margin-top: 70px;
+	}
+
+	#profile{
+		width: 100%;
+		border-radius: 100%;
 	}
 
 			nav{

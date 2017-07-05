@@ -22,6 +22,7 @@
            
       $('#portfolio').animate({height:"100vh"}, 300);   
           $('#portfolio').css({"display":"block"}); 
+            $('body').css({"overflow":"auto"});
                         // $('#header').css({"display":"none"});
                             $('#about').hide();
                             $('nav').hide();
@@ -44,6 +45,7 @@
 
         $('.close-x').click(function(){
                          $('nav').show();
+                         $('body').css({"overflow":"hidden"});
           $('#portfolio').animate({height:"0vh"}, 300, function(){
         $('#portfolio').css({"display":"none"});
 
