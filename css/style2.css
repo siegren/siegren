@@ -208,13 +208,16 @@
 			margin-left: 50px;
 			margin-top: 20px;
 			list-style-type: disc;
+	
 		}
 
 		#left #social{
-			width: 250px;
+
+			width: 100%;
 			list-style-type: none;
+			padding-left: 35px;
 			margin: 0 auto;
-			margin-top: 150px;
+			margin-top: 50px;
 		}
 
 		#left #social li{
@@ -257,7 +260,10 @@
 		#right textarea{
 			width: 100%;
 			height: 50px;
-			padding-left: 15px;		}
+			padding-left: 15px;		
+			background-color: #000;
+			color: #fff;
+		}
 
 		#right input{
 			width: 100%;
