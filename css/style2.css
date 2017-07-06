@@ -395,12 +395,11 @@
 }
 .box a{
 	clear: both;
-	padding: 8px;
+	padding: 4px;
 	background-color: #000;
 	color: #fff;
 	text-decoration: none;
-}
-
+}4
 .move-down{
 	/*padding-top: 100px;*/
 }
@@ -660,6 +659,9 @@ hr{ display: block; }
 #ruby, #web, #other{
 	padding-top: 30px;
 	width: 100%;
+}
+#ruby{
+	margin-left: 0px;
 }
 
 /*#ruby, #web, #other{
