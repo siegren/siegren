@@ -20,7 +20,7 @@
 
 
            
-      $('#portfolio').animate({height:"100vh"}, 300);   
+      $('#portfolio').animate({height:"100vh"}, 600);   
           $('#portfolio').css({"display":"block"}); 
             // $('#portfolio').css({"overflow":"auto"});
                         // $('#portfolio').css({"top":"0"});
@@ -36,7 +36,7 @@
                // $('#about').css({"display":"block"});
                    $('#about').show();
                      $('nav').show();
-          $('#portfolio').animate({height:"0vh"}, 300, function(){
+          $('#portfolio').animate({height:"0vh"}, 600, function(){
         $('#portfolio').css({"display":"none"});
 
       });   
@@ -47,7 +47,7 @@
                          $('nav').show();
                          
                          $('body').css({"overflow":"hidden"});
-          $('#portfolio').animate({height:"0vh"}, 300, function(){
+          $('#portfolio').animate({height:"0vh"}, 600, function(){
         $('#portfolio').css({"display":"none"});
 
       });   
@@ -57,7 +57,7 @@
     // for skills
     $('.skills').click(function(){
 
-      $('#skills').animate({height:"100vh"}, 300);   
+      $('#skills').animate({height:"100vh"}, 600);   
         $('#skills').css({"display":"block"});
         $('#about').hide();
           $('nav').hide();
@@ -70,7 +70,7 @@
             //      $('#about').css({"display":"block"});
            $('#about').show();
              $('nav').show();
-      $('#skills').animate({height:"0vh"}, 300, function(){
+      $('#skills').animate({height:"0vh"}, 600, function(){
         $('#skills').css({"display":"none"});
       });   
         
@@ -79,23 +79,33 @@
         $('.close-x').click(function(){
 
              $('nav').show();
-      $('#skills').animate({height:"0vh"}, 300, function(){
+      $('#skills').animate({height:"0vh"}, 600, function(){
         $('#skills').css({"display":"none"});
       });   
         
     })
     
-    // for html
-    $('.html-css').click(function(){
-
-      $('#html').animate({height:"100vh"}, 300);    
-        $('#html').css({"display":"block"});
+    $(document).scroll(function(){
+      $('.scroll-up').css({"display":"block"});
+      var a = $(document).scrollTop();
+      if (a == "0"){
+             $('.scroll-up').css({"display":"none"});
+      }
     })
 
-    $('.close-black').click(function(){
-
-      $('#html').animate({height:"0vh"}, 300, function(){
-        $('#html').css({"display":"none"});
-      });   
-        
+    $('#portfolio').scroll(function(){
+      $('.p-scroll-up').css({"display":"block"});
+      var a = $('#portfolio').scrollTop();
+      if (a == "0"){
+             $('.p-scroll-up').css({"display":"none"});
+      }
     })
+
+    $('.p-scroll-up').click(function(){
+      $('#portfolio').stop().animate({scrollTop:0}, 500, 'swing', function(){
+        // alert('it worked!');
+      });
+    });
+
+    
+
