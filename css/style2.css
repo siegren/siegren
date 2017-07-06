@@ -2,12 +2,31 @@
 		body{
 			font-size: 1em;
 			font-family: 'Play', sans-serif;
-			overflow: hidden;
+			/*overflow: hidden;*/
 		}
 
 		*{
 			box-sizing: border-box;
 		}
+
+#loading{
+	margin: 0 auto;
+	width: 100px;
+	margin-top: 200px;
+}
+		/* Header */
+.my-header {
+	position: absolute;
+	/*display: none;*/
+	width: 100%;
+	/*background: #333;*/
+	/*overflow: hidden;*/
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+
+
 
 		  @keyframes blink {
       0% {padding-top: 0px;}
@@ -32,7 +51,8 @@
 
 		#arrow{
 					display: none;
-					/*position:relative;*/
+					position:relative;
+					z-index: 80;
 			width: 30px;
 			height:33px;
 			margin: 0 auto;
@@ -45,6 +65,7 @@
 		}
 
 		#header{
+			display: none;
 			width: 100%;
 			height: 100vh;
 			padding-left:10px;
@@ -65,12 +86,16 @@
 /*			height: 150px;
 			line-height: 150px;*/
 			padding-bottom: 15px;
+			z-index: 80;
+			position: relative;
 			/*background-color: #000;*/
 		}
 
 		#my-profile{
 			width: 250px;
 			margin: 0 auto;
+			position: relative;
+			z-index: 80;
 		}
 		#profile{
 			width: 250px;
@@ -133,6 +158,8 @@
 			text-decoration: none;
 			margin: 0 auto;
 			opacity: 0.3;
+			position: relative;
+			z-index: 80;
 
 
 		}
@@ -150,6 +177,8 @@
 			padding-top: 15px;
 			border: 5px solid #000;
 			background-color: #000;
+			position: relative;
+			z-index: 800;
 		}
 
 		#navigation{
@@ -159,7 +188,7 @@
 			left:0;
 				/*background-color: #000;*/
 				padding-top:10px;
-			/*z-index: 1000;*/
+			z-index: 80;
 		}
 
 		nav{
@@ -385,7 +414,7 @@
 	width: 200px;
 	max-width: 100%;
 	margin-top: 10px;
-	font-size: 0.7em;
+	font-size: 0.9em;
 	/*border: 1px solid red;*/
 }
 
@@ -459,15 +488,40 @@ hr{
 
 hr{
 	width: 300px	;
-	margin: 0 animation-timing-function;
+	margin: 0 auto;
 }
 
+
+/*@media only screen and (min-height: 320px){
+		#profile{
+	width: 100%;
+	height: auto;
+		
+
+}
+#my-profile{
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;	
+	
+}
+
+#name{
+	font-size: 1.5em;
+}
+}*/
 
 @media only screen and (max-width: 414px) {
 		#name{
 		font-size: 2em;
 	}
 }
+
+/*@media only screen and (min-width: 1024px) {
+	nav a{
+		font-size: 20px;
+	}
+}*/
 
 @media only screen and (max-width: 1024px) {
 
@@ -673,52 +727,21 @@ hr{ display: block; }
 	padding: 20px;
 	font-size: 1em;
 }
-/*@media only screen and (max-width: 1024px) {
-	div{
-		box-sizing: border-box;	
-	ax
-	#header{
-		display: none;
-	}
+}
 
-	#left{
-		padding: 10px;
-		display: block;
-		width: 100%;
-
-
-	}
-
-	#left #social{
-
-			width: 50%;
-			list-style-type: none;
-			margin: 0 auto;
-			margin-top: 20px;
-
-		}
-
-		#left #social li{
-			display: inline-block;
-			margin-right: 10%;
-	
-			width: 10%;
-			height: 30px;
-		}
-
-
-	#left h2{
-		font-size: 1.3em;
-				font-weight: bolder;
-	}
-
-	#about{
-		display: block;
-	}
-
-	#right{
-		display: none;
-	}
-
+@media only screen and (min-width: 1024px) and (max-height: 1024px) and (max-height: 768px){
+	#profile{
+	width: 100%;
+	height: auto;
+		/*padding-top: 150px;*/
 
 }
+#my-profile{
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;	
+	/*border: 1px solid red;*/
+}
+}
+
+

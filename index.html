@@ -16,9 +16,15 @@
 
 </head>
 <body>
-
+<div id="loading">
+	<img src="img/loading.gif" width="100" height="100">
+</div>
 <div id="header">
-	
+		       		<div id="my-header" class="my-header" style="height: 589px;">
+                    <canvas id="canvas" width="1366" height="589"></canvas>
+                
+                </div>         
+<!-- </div> -->
 		<a href="#header"><img class="logo" src="img/logo.png"></a>
 		<div id="my-profile">
 					<img id="profile" src="img/profile.png">		
@@ -28,8 +34,7 @@
 		<div id="arrow"><a href="#about"><img src="img/arrow-down.png" class="arrow-down"></a></div>
 
 		<a id="about-link" href="#about">INFORMATION</a>		
-
-		<div id="navigation">
+				<div id="navigation">
 			<nav>
 			
 			<a href="#" class="portfolio">PORTFOLIO</a>
@@ -40,7 +45,6 @@
 
 
 
-		
 </div>
 
 <div id="about">
@@ -433,6 +437,12 @@ $('a[href*="#"]')
     }
   });
 
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#header').css({"display":"block"});
+		$('#loading').hide();
+	})
 </script>
 
 
