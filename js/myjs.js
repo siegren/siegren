@@ -107,5 +107,28 @@
       });
     });
 
-    
+    // ######
+    // tab here
+    // ######
+    $('.web-tab').click(function(){
+      $('.web-tab').css({"background-color":"silver", "color":"#000"});
+      $('.ruby-tab, .other-tab').css({"background-color":"#000", "color":"#fff"});
+      $("#web").show();
+      $('#ruby, #other').hide();
+    });
+
+    $('.ruby-tab').click(function(){
+      $('.ruby-tab').css({"background-color":"silver", "color":"#000"});
+      $('.web-tab, .other-tab').css({"background-color":"#000", "color":"#fff"});
+      $("#ruby").show();
+      $('#web, #other').hide();
+    });
+
+    $('.other-tab').click(function(){
+     $('.other-tab').css({"background-color":"silver", "color":"#000"});
+           $('.ruby-tab, .web-tab').css({"background-color":"#000", "color":"#fff"});
+      $("#other").show();
+      $('#ruby, #web').hide();
+    });
+
 

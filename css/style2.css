@@ -345,14 +345,15 @@
 			background-color: rgba(255, 255, 255, 0.9);
 			overflow: auto;
 			z-index: 1000;
+			overflow-x: hidden;
 			/*background-position: fixed;*/
 			/*background-attachment: fixed*/
 		}
 
 
 .box{
-	width: 700px;
-	margin: 0 auto;
+	width: 600px;
+	/*margin: 0 auto;*/
 	font-size: 1em;
 	padding: 10px;
 	padding-bottom: 0px;
@@ -380,13 +381,17 @@
 	text-align: justify;
 }
 .box .des p{
-	width: 500px;
+	/*width: 500px;*/
+	width: 200px;
 	max-width: 100%;
 	margin-top: 10px;
+	font-size: 0.7em;
+	/*border: 1px solid red;*/
 }
 
 .box .des h1{
-	font-size: 1.5em;
+	font-size: 1em;
+	font-weight: bolder;
 }
 .box a{
 	clear: both;
@@ -401,6 +406,7 @@
 }
 
 hr{
+	display: none;
 	width: 100%;
 	margin: 0;
 	background-color: #000;
@@ -435,6 +441,28 @@ hr{
 	width: 100%;
 	height: auto;
 }
+
+#portfolio-nav{
+	display: none;
+}
+
+#ruby, #web, #other{
+	float: left;
+	width: 30%;
+	/*border-right: 1px solid red;*/
+}
+#ruby{
+	margin-left: 10px;
+}
+#ruby, #web{
+		margin-right: 50px;
+}
+
+hr{
+	width: 300px	;
+	margin: 0 animation-timing-function;
+}
+
 
 @media only screen and (max-width: 414px) {
 		#name{
@@ -550,11 +578,14 @@ body{
 	padding-left: 0px;
 }
 .box .des p{
-/*	width: 500px;*/
+	/*width: 500px;*/
 	width: 100%;
 	margin-top: 10px;
 	text-align: justify;
+	font-size: 1.1em;
 }
+
+hr{ display: block; }
 
 .box .des h1{
 	font-size: 1.5em;
@@ -584,20 +615,62 @@ body{
 			width: 100%;
 			margin: 0 auto;
 		}
-/*#about{
+
+#portfolio-nav{
+	width: 100%;
+	height:10px;
 	display: block;
+	/*border: 1px solid red;*/
+	position: relative;
 }
 
-#portfolio{
-	display: block;
-	position: relative;
-	height: 100vh;
+#portfolio-nav ul{
+	width: 100%;
+	margin: 0 auto;
+	display: table;
+}
 
+#portfolio-nav ul li{
+	font-weight: bolder;
+	padding: 5px 0;
+	font-size: 1em;
+	display: table-cell;
+	height: 10px;
+	width: 30%;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	/*border: 1px solid blue;*/
+	/*margin-right: 5%;*/
+}
+
+#portfolio-nav ul li:not(:last-child){
+	border-right: 2px solid #fff;
+}
+
+#portfolio-nav ul li:first-child{
+	background-color: silver;
+	color: #000;
+}
+
+#web, #other{
+	display: none;
+}
+
+#ruby, #web, #other{
+	padding-top: 30px;
+	width: 100%;
+}
+
+/*#ruby, #web, #other{
+	float: left;
+	width: 30%;
 }*/
 
+.title{
+	padding: 20px;
+	font-size: 1em;
 }
-
-
 /*@media only screen and (max-width: 1024px) {
 	div{
 		box-sizing: border-box;	
