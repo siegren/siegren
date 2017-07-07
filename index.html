@@ -16,9 +16,7 @@
 
 </head>
 <body>
-<div id="loading">
-	<img src="img/loading.gif" width="100" height="100">
-</div>
+<!-- <div class="loader"></div> -->
 <div id="header">
 		       		<div id="my-header" class="my-header" style="height: 589px;">
                     <canvas id="canvas" width="1366" height="589"></canvas>
@@ -78,12 +76,13 @@
 	<div id="right">
 		<span class="close">x</span>
 
-			<form enctype="text/plain">	
+			<form  enctype="text/plain">	
 				<label>Want to tell something about me?</label><br /> <br />		
 				<input type="text" name="fullname" placeholder="Full Name"><br /><br />
 				<input type="email" name="email" placeholder="Email Address"><br /><br />
 				<textarea name="msg" width="100px" height="50px" >Enter Message here...</textarea><br /><br />
-				<button>Send</button>
+				<input type="submit" value="Send" class="button">
+				<!-- <button>Send</button> -->
 			</form>
 
 	</div>
@@ -501,10 +500,11 @@ $('a[href*="#"]')
 
 </script> -->
 <script type="text/javascript">
-	$(document).ready(function(){
+	// $(document).ready(function(){
 		$('#header').css({"display":"block"});
-		$('#loading').hide();
-	})
+		$('#footer').css({"display":"block"});
+	// 	$('.loader').hide();
+	// })
 </script>
 
 
