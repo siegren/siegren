@@ -111,16 +111,25 @@
 			position: absolute;
 			right: 15px;
 			z-index: 1000;
-			top: 20px;
+			top: 13px;
 			font-size: 1.2em;
 			color: #fff;
 			/*border: 1px solid #fff;*/
 			width: 25px;
-			line-height: 	25px;
+			line-height: 	30px;
 			height: 	25px;
 			/*border-radius: 	20px;*/
 			text-align: center;
 
+		}
+
+		.close-x{
+			border: 1px solid #fff;
+
+			width: 30px;
+			line-height: 	25px;
+			height: 	30px;
+			font-size: 1.5em;
 		}
 
 		.close-m{
@@ -351,7 +360,6 @@
 			padding-left: 15px;
 			color: #fff;
 		}
-
 		#right button{
 			width: 100%;
 			height: 30px;
@@ -371,7 +379,7 @@
 			top: 0;
 			z-index: 1000;
 			display:none;
-			background-color: rgba(255, 255, 255, 0.9);
+			background-color: rgba(255, 255, 255, 0.8);
 			overflow: auto;
 			z-index: 1000;
 			overflow-x: hidden;
@@ -401,6 +409,7 @@
 	width: 150px;
 	height: 150px;
 	max-width: 100%;
+	/*border: 5px solid #fff;*/
 }
 
 .box .des{
@@ -450,14 +459,31 @@ hr{
 
 }
 
+.title{
+	margin-bottom: 10px;
+	height: 80px;
+	padding-left: 25px;
+	line-height: 60px;
+}
+
+.close-x{
+	right: 35px;
+	top: 35px;
+}
+
+#portfolio .title{
+		margin-bottom: 0;
+}
+
 #skill-big-box{
 	/*border: 1px solid red;*/
-	width: 90%;
-	margin: 0 auto;
-	margin-top: 20px;
+	width: 100%;
+	margin: 0 auto
+	margin-top: 300px;
+	padding-left: 30px;
 }
 .skill-box{
-	width:150px;
+	width:130px;
 	padding-right: 15px;
 	padding-bottom: 20px;
 	float: left;
@@ -473,10 +499,42 @@ hr{
 #portfolio-nav{
 	display: none;
 }
+#portfolio-title{
+	width: 100%;
+	height:10px;
+	display: block;
+	position: relative;
+}
+
+#portfolio-title ul{
+	width: 100%;
+	margin: 0 auto;
+	display: table;
+}
+
+#portfolio-title ul li{
+	font-weight: bolder;
+	padding: 5px 0;
+	font-size: 1em;
+	display: table-cell;
+	height: 10px;
+	width: 30%;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	/*border: 1px solid blue;*/
+	/*margin-right: 5%;*/
+}
+
+#portfolio-title ul li:not(:last-child){
+	border-right: 2px solid #fff;
+}
+
 
 #ruby, #web, #other{
 	float: left;
 	width: 30%;
+	padding-top: 30px;
 	/*border-right: 1px solid red;*/
 }
 #ruby{
@@ -491,6 +549,35 @@ hr{
 	margin: 0 auto;
 }
 
+#footer{
+	opacity: 0.4;
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+	font-size: 0.7em;
+	color: #fff;
+	/*border: 1px solid red;*/
+	width: 200px;
+	display: block;
+}
+
+#footer p{
+	width: 200px;
+	line-height: 20px;
+	padding-left: 25px;
+	/*font-size: 2em;*/
+}
+
+
+#footer img{
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
+#footer .hide{
+	display: none;
+}
 
 /*@media only screen and (min-height: 320px){
 		#profile{
@@ -531,6 +618,10 @@ body{
 
 #arrow{
 	display: block;
+}
+
+.close-x{
+	display: none;
 }
 #profile{
 	width: 50%;
@@ -669,6 +760,13 @@ hr{ display: block; }
 			margin: 0 auto;
 		}
 
+#portfolio-title{
+	display: none;
+}
+#portfolio{
+	height: auto;
+}
+
 #portfolio-nav{
 	width: 100%;
 	height:10px;
@@ -702,7 +800,7 @@ hr{ display: block; }
 }
 
 #portfolio-nav ul li:first-child{
-	background-color: silver;
+	background-color: rgba(255,255,255,0);
 	color: #000;
 }
 
@@ -727,6 +825,60 @@ hr{ display: block; }
 	padding: 20px;
 	font-size: 1em;
 }
+
+#footer{
+	opacity: 1;
+	clear: both;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	background-color: #000;
+	font-size: 0.8em;
+	color: #fff;
+	width: 	100%;
+	height: 100px;
+	display: block;
+	margin-left: 0;
+	z-index: 1000;
+	border-top: 15px solid #fff;
+	padding-top: 20px;
+}
+
+#footer p{
+
+	width: 150px;
+	line-height: 15px;
+	padding-left: 10px;
+	text-align: left;
+	/*border: 1px solid red;*/
+}
+
+.copy{
+	float: left;
+}
+
+#footer img{
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-left: 25px;
+}
+
+#footer .hide{
+	display: block;
+}
+
+.title{
+	margin-bottom: 10px;
+	height: auto;
+	padding-left: 10px;
+	line-height: 0px;
+}
+/*.footer-logo{
+	width: 30px;
+	margin: 0 auto;
+}*/
+
 }
 
 @media only screen and (min-width: 1024px) and (max-height: 1024px) and (max-height: 768px){
@@ -744,4 +896,88 @@ hr{ display: block; }
 }
 }
 
+@media (max-height: 414px) and (max-width: 736px){
+		#right, #left{
+		height: 120vh;
+	}
+
+	#profile{
+	width: 100%;
+	height: auto;
+		/*padding-top: 150px;*/
+
+}
+#my-profile{
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;	
+	/*border: 1px solid red;*/
+}
+#name{
+	font-size: 2em;
+}
+}
+
+/*for landscape*/
+@media (max-height: 375px) and (max-width: 667px){
+
+	#right, #left{
+		height: 150vh;
+	}
+	#profile{
+	width: 100%;
+	height: auto;
+		/*padding-top: 150px;*/
+
+}
+#my-profile{
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;	
+	/*border: 1px solid red;*/
+}
+#name{
+	font-size: 1.8em;
+}
+}
+
+@media (max-height: 320px) and (max-width: 568px){
+
+	#right, #left{
+		height: 150vh;
+	}
+	#profile{
+	width: 100%;
+	height: auto;
+		/*padding-top: 150px;*/
+
+}
+#my-profile{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;	
+	/*border: 1px solid red;*/
+}
+#name{
+	font-size: 1.6em;
+}
+
+
+}
+
+@media (max-height: 360px) and (max-width: 640px){
+
+	#right, #left{
+		height: 150vh;
+	}
+
+}
+
+@media (max-height: 412px) and (max-width: 732px){
+
+	#right, #left{
+		height: 150vh;
+	}
+
+}
 
