@@ -12,111 +12,317 @@
 
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style2.css">
-		<link rel="stylesheet" type="text/css" href="css/mobile.css">
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
-<div class="loader"></div>
+<!-- <div class="loader"></div> -->
 <div id="header">
-	<div id="my-header" class="my-header" style="height: 589px;">
-        <canvas id="canvas" width="1366" height="589"></canvas>
-    </div>  
+		       		<div id="my-header" class="my-header" style="height: 589px;">
+                    <canvas id="canvas" width="1366" height="589"></canvas>
+                
+                </div>         
+<!-- </div> -->
+		<a href="#header"><img class="logo" src="img/logo.png"></a>
+		<div id="my-profile">
+					<img id="profile" src="img/profile.png">		
+		</div>
 
-    <!-- my profile picture -->
-	<div id="my-profile">
-		<img id="profile" src="img/profile.png">		
-	</div>
-	<!-- end -->
- 
- 	<!-- name wrapper -->
-	<div id="my-name">
-		<h1 id="name">Hello, I'm Jessie</h1>
-		<hr class="liner">
-		<h2>back-end programmer <i class="fa fa-star" aria-hidden="true"></i> info tech instructor <i class="fa fa-star" aria-hidden="true"></i> full stack developer</h2>
-	</div>
-	<!-- end of wrapper -->
+		<h1 id="name">Jessie Nerona </h1>
+		<div id="arrow"><img src="img/arrow-down.png" class="arrow-down"></div>
 
-	<!-- this is the navigation  -->
-	<div id="nav-wrapper">
-		<nav>
-			<a href="#" class="about"><i class="fa fa-user" aria-hidden="true"></i></a>
-			<a href="#" class="works"><i class="fa fa-paint-brush" aria-hidden="true"></i></a>
-			<a href="#" class="home"><img class="logo" src="img/logo.png"></a>
-			<a href="#" class="tools"><i class="fa fa-briefcase" aria-hidden="true"></i></i></a>
-			<a href="#" class="contacts"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-		</nav>
-	</div>
-	<!-- end of navigation -->
+		<a id="about-link" href="#about">INFORMATION</a>		
+				<div id="navigation">
+			<nav>
+			
+			<a href="#" class="portfolio">PORTFOLIO</a>
+			<a href="#" class="skills">SKILLS</a>
+
+			</nav>
+		</div>
+
+
+
 </div>
 
-<!-- about -->
 <div id="about">
 
-	<div class="content">
-		<h1 class="title" >about me</h1>
-			<div class="left">
-				<p>Hello, <span>Jessie Nerona</span> here, I'm a <span>software developer</span>. I love programming especially if it's <span>back-end</span> programming. I use PHP, SQL, VB.NET, RUBY and Web Technologies such as HTML5, CSS3, and Javascript.</p>
-				<p>I like listening to <span>music</span> and sometimes dance to its beat. I have fondness to <span>magic</span> and <span>mystery</span> and that is why I love watching <span>sci-fi movies</span>. I love to <span>travel</span> and someday I'm gonna take a trip all around the world.</p>
-				<div id="whats-up">
+	<div id="left">
+		<div id="about-me">
+			<h1>Jessie Nerona <a href="https://www.codewars.com/users/siegren" target="blank"><img src="https://www.codewars.com/users/siegren/badges/micro" width="100px"></a></h1>
+
+			<p>Hello, Jessie here, I'm a software developer. I use PHP, SQL, VB.NET, RUBY and Web Technologies such as HTML5, CSS3, and Javascript.</p>
 					<h2> What I have been up to lately?</h2>
-					<ul class="what-up">	
-						<li><i class="fa fa-check" aria-hidden="true"></i> currently in a coding bootcamp where I am learning how to code in ruby and improving my skills</li>
-						<li><i class="fa fa-check" aria-hidden="true"></i> making personal projects to make my self busy</li>
-						<li><i class="fa fa-check" aria-hidden="true"></i> doing an online course to improve more my skills</li>
-						<li><i class="fa fa-check" aria-hidden="true"></i> reading news to be updated on what is happening around me</li>
-					</ul>
-				</div>
+				<ul class="what-up">	
+					<li>currently in a coding bootcamp where I am learning how to code in ruby and improving my skills</li>
+					<li>making personal projects to make my self busy</li>
+					<li>doing an online course to improve more my skills</li>
+					<li>reading news to be updated on what is happening around me</li>
+				</ul>
+<!-- <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Friven09&width=78&height=65&layout=button&size=large&show_faces=true&appId" width="78" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> -->
 
-			</div>
 
-			<div class="right">
 
-				<img src="img/profile.png">
-				
-			</div>
-		<div class="clear">	</div>
+				<ul id="social">
+					<li><a href="https://www.facebook.com/riven09"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+					<li class="space"></li>
+					<li><a href="https://www.linkedin.com/in/jessie-nerona-b3970559/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+					<li class="space"></li>
+					<li><a href="https://github.com/siegren" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+					
+				</ul>
+		</div>
 	</div>
+	<div id="right">
+		<span class="close">x</span>
+
+			<form  enctype="text/plain">	
+				<label>Want to tell something about me?</label><br /> <br />		
+				<input type="text" name="fullname" placeholder="Full Name"><br /><br />
+				<input type="email" name="email" placeholder="Email Address"><br /><br />
+				<textarea name="msg" width="100px" height="50px" >Enter Message here...</textarea><br /><br />
+				<input type="submit" value="Send" class="button">
+				<!-- <button>Send</button> -->
+			</form>
+
+	</div>
+	<div class="clear"></div>
+
+
+</div>
+
+<!--  portfolio -->
+
+		<div id="portfolio">
+	<div class="p-scroll-up" style="opacity: 0.4; display: none; position: fixed; right: 10px; bottom: 10px; width: 40px; height: 40px; background-color: #000; z-index: 2000;"><a href="#header"><img src="img/scroll-up.png" width="100%"></a></div>
+
+		<!-- <div class="p-scroll-down" style="opacity: 0.4; display: none; position: fixed; right: 10px; bottom: 10px; width: 40px; height: 40px; background-color: #000; z-index: 2000;"><a href="#header"><img src="img/scroll-down.png" width="100%"></a></div> -->
+
+		<span id="top"></span>
+				<h1 class="title">MY WORKS</h1>
+				<div id="portfolio-nav">
+						<ul>
+						<li class="ruby-tab"><i class="fa fa-diamond" aria-hidden="true"></i> RUBY</li>
+						<li class="web-tab"><i class="fa fa-globe" aria-hidden="true"></i> WEB</li>
+						<li class="other-tab"><i class="fa fa-tasks" aria-hidden="true"></i>
+ OTHERS</li>
+			
+				</div>
+								<div id="portfolio-title">
+						<ul>
+						<li><i class="fa fa-diamond" aria-hidden="true"></i> RUBY</li>
+						<li><i class="fa fa-globe" aria-hidden="true"></i> WEB</li>
+						<li><i class="fa fa-tasks" aria-hidden="true"></i>
+ OTHERS</li>
+			
+				</div>
+	
+							<span class="close-x">x</span>
+									<span class="close-m">x</span>
+
+			<div id="ruby">
+				<!-- <h1>RUBY</h1> -->
+				<div class="box move-down">
+						<img src="img/parkinglot.png">
+								<div class="des">
+								<h1>Park Now - Parking Lot Locator</h1>
+								<p>Park Now is a simple app created using ruby and CSV as database. It helps you look for the nearest parking lot. </p>
+								<br />
+								<a target="_blank" href="https://github.com/siegren/vivixx/tree/master/parkinglot">GITHUB</a>	
+
+								</div>
+
+
+										<div class="clear">	</div>
+													<br />
+								<hr>
+								<br />	
+									</div>
+		
+
+										
+							<div class="box move-down">
+								<img src="img/numbergame.png">
+								<div class="des">
+								<h1>Lottery/Number Game</h1>
+								<p>This is a number game made using ruby. You will guess the three mystery numbers, from 1 to 9. If you guess atleast one number correctly you win. </p>
+									<br />
+								<a target="_blank" href="https://github.com/siegren/vivixx">GITHUB</a>		
+								</div>
+								<div class="clear">	</div>
+								<br />
+								<hr>
+								<br />		
+
+							</div>
+
+							<div class="box move-down">
+								<img src="img/atm.png">
+								<div class="des">
+								<h1>Automatic Teller Machine</h1>
+								<p>One of our challenges during the coding bootcamp is to create an ATM. This is my output.</p>
+									<br />
+								<a target="_blank" href="https://github.com/siegren/vivixx">GITHUB</a>		
+								</div>
+								<div class="clear">	</div>
+								<br />
+								<hr>
+								<br />		
+
+							</div>
+
+							<div class="box move-down">
+								<img src="img/voting.png">
+								<div class="des">
+								<h1>Vivixx Voting System</h1>
+								<p>This is our day 3 challenge during the codding bootcamp an application of array and hashes</p>
+									<br />
+								<a target="_blank" href="https://github.com/siegren/vivixx">GITHUB</a>		
+								</div>
+								<div class="clear">	</div>
+								<br />
+								<hr>
+								<br />		
+
+							</div>
+
+							<div class="box">
+								<img src="img/restaurant.png">
+								<div class="des">
+								<h1>Siegren's Restaurant</h1>
+								<p>This program is our day 1 challenge. A simple ordering system of a restaurant. </p>
+									<br />
+								<a target="_blank" href="https://github.com/siegren/vivixx">GITHUB</a>		
+								</div>
+								<div class="clear">	</div>
+								<br />
+								<hr>
+								<br />		
+
+							</div>
+
+							<div class="box">
+						<img src="img/ruby.png">
+							<div class="des">
+								<h1>Area Calculator</h1>
+								<p>This is a ruby gem that I made during our Coding Bootcamp in Vivixx Academy. It's a simple gem that you can use if you need to compute the area of a certain shape. As of now, it can only compute the area of a square, a rectangle, and a circle. This is my first ever ruby gem. 
+									</p>
+									<br /><a target="_blank" href="https://github.com/siegren/vivixx/tree/master/area">GITHUB</a>	
+							
+							</div>
+										<div class="clear">	</div>
+															<br />
+								<hr>
+								<br />		
+
+					</div>
+																	<div class="box move-down">
+						<img src="img/ruby.png">
+								<div class="des">
+								<h1>Ruby Gem - Converter</h1>
+								<p>Just like my Area-Calculator gem, this gem is also created during the Coding Bootcamp. It is a converter of units of measurements such as meters to kilometers, celsius to fahrenheit, and so on. </p>
+								<br />
+								<a target="_blank" href="https://github.com/siegren/vivixx/tree/master/converter">GITHUB</a>	
+
+								</div>
+
+
+										<div class="clear">	</div>
+						
+									</div>
+
+
+
+			</div>
+			<!-- web design -->
+			<div id="web">
+
+			<div class="box move-down">
+<img src="img/portfolio.png">
+								<div class="des">
+								<h1>Portfolio Website</h1>
+								<p>This is my portfolio website. I made this during the cooding bootcamp. I learned a lot while creating it. </p>
+								<br />
+								<a target="_blank" href="https://github.com/siegren/siegren.github.io">GITHUB</a>		
+								</div>
+								<div class="clear">	</div>
+							<br />
+							<hr />
+							<br />
+							</div>
+
+				<div class="box move-down">
+<img src="img/zen.png">
+								<div class="des">
+								<h1>Zen Garden CSS Design</h1>
+								<p>CSS Zen Garden is a website where you can practice your skill in CSS. I downloaded the HTML file and made my Zen Garden CSS Design. This is also made during the Coding Bootcamp. </p>
+								<br />
+								<a target="_blank" href="https://github.com/siegren/vivixx/tree/master/zen">GITHUB</a>		
+								</div>
+								<div class="clear">	</div>
+							<br />
+							<hr />
+							<br />
+							</div>
+											<div class="box move-down">
+<img src="img/onions.png">
+								<div class="des">
+								<h1>Onion Day</h1>
+								<p>During the coding bootcamp I created a simple web page for Onion Ring Day. </p>
+								<br />
+								<a target="_blank" href="https://github.com/siegren/vivixx/tree/master/zen">GITHUB</a>		
+								</div>
+								<div class="clear">	</div>
+								</div>
+
+			</div>
+
+			<!-- other -->
+			<div id="other">
+											<div class="box move-down">
+						<img src="img/mobile.png">
+								<div class="des">
+								<h1>Jquery Mobile Practice</h1>
+								<p>I wanted to learn jquery mobile so I created a simple app. Iit has three pages, profile, video and images page</p>
+								<br />
+							<!-- 	<a target="_blank" href="https://github.com/siegren/vivixx/tree/master/parkinglot">GITHUB</a> -->	
+
+								</div>
+
+
+										<div class="clear">	</div>
+
+
+
+			</div>
+		
+
+
+			</div>
+			<div class="clear"></div>
+		<!-- <div class="container">	 -->
+
+
+					
+								
+
+
+
+
+		<!-- </div> -->
 
 </div>
 	
-<div id="works">
-	<div class="content">
-		<h1 class="title" >my works</h1>
-		<div id="big-box">
-			<div class="box">
-				<img src="img/parkinglot.png">
-				<div class="des">
-					<h1>Park Now - Parking Lot Locator</h1>
-					<p>Park Now is a simple app created using ruby and CSV as database. It helps you look for the nearest parking lot. </p>
-					<a targ"et="_blank href="https://github.com/siegren/vivixx/tree/master/parkinglot">GITHUB</a>	
-				</div>
-			</div>
-			<div class="box">
-				<img src="img/zen.png">
-				<div class="des">
-					<h1>Zen Garden CSS Design</h1>
-					<p>CSS Zen Garden is a website where you can practice your skill in CSS. Just download the html file. </p>
-					<a targ"et="_blank href="https://github.com/siegren/vivixx/tree/master/parkinglot">GITHUB</a>	
-				</div>
-			</div>
-			<div class="box">
-				<img src="img/portfolio.png">
-				<div class="des">
-					<h1>My Portfolio Website</h1>
-					<p>This is my portfolio website. I made this during the cooding bootcamp. I learned a lot while creating it.  </p>
-					<a targ"et="_blank href="https://github.com/siegren/vivixx/tree/master/parkinglot">GITHUB</a>	
-				</div>
-			</div>
-		</div>
-	</div>
 
-</div>
+		<!-- portfolio ending -->
 
-<div id="tools">
-	<div class="content">
-		<h1 class="title" >dev tools</h1>
-				<div id="skill-big-box">
+
+<div id="skills" >	
+				<h1 class="title"><span>MY</span> SKILLS</h1>	
+							<span class="close-x">x</span>
+								<span class="close-m">x</span>
+		<!-- <div class="container">	 -->
+		<div id="skill-big-box">
 		
 		<div class="skill-box">
 			<img src="img/ruby.png">
@@ -231,28 +437,24 @@
 
 
 		</div>
-	</div>
-
-</div>
-
-<div id="contacts">
-	<div class="content">
-		<h1 class="title" >contact me</h1>
-		
-			<p>Wanna tell something about me or get in touch? Just visit my social media accounts. Add me or follow me and send me a message. Here are the links. <br /><br />
-
-						<i class="fa fa-facebook-square" aria-hidden="true"></i>
-			<i class="fa fa-linkedin-square" aria-hidden="true"></i>
-			<i class="fa fa-github-square" aria-hidden="true"></i>
-			<i class="fa fa-twitter-square" aria-hidden="true"></i></p>
-	
-
-
 
 
 	</div>
 
-</div>	
+
+	<div class="scroll-up" style="opacity: 0.4; display: none; position: fixed; right: 10px; bottom: 50px; width: 40px; height: 40px; background-color: #000; z-index: 2000;"><a href="#header"><img src="img/scroll-up.png" width="100%"></a></div>
+
+		<div class="scroll-down" style="opacity: 0.4; display: none; position: fixed; right: 10px; bottom: 10px; width: 40px; height: 40px; background-color: #000; z-index: 2000;"><a href="#header"><img src="img/scroll-down.png" width="100%"></a></div>
+
+	<div id="footer">
+		<div class="footer-logo">
+						<img src="img/logo.png">
+		</div>
+		<div class="copy">
+				<p class="hide">Alrights reserved. </p><p> Copyright &copy; 2017.</p> <p class="hide"> Developed by Siegren</p>		
+		</div>
+
+	</div>
 </body>
 
 
@@ -300,7 +502,8 @@ $('a[href*="#"]')
 <script type="text/javascript">
 	// $(document).ready(function(){
 		$('#header').css({"display":"block"});
-		$('.loader').hide();
+		$('#footer').css({"display":"block"});
+	// 	$('.loader').hide();
 	// })
 </script>
 
