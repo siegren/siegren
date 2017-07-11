@@ -681,7 +681,7 @@ body{
 	#about{
 		display: block;
 		position: relative;
-		z-index: 800;
+		/*z-index: 800;*/
 		height: auto;
 	}
 
