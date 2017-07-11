@@ -852,7 +852,7 @@ hr{ display: block; }
 	display: block;
 	margin-left: 0;
 	z-index: 1000;
-	border-top: 15px solid #fff;
+/*	border-top: 15px solid #fff;*/
 	padding-top: 20px;
 }
 
