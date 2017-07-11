@@ -96,7 +96,7 @@ $('#footer').show()
     $(document).scroll(function(){
       $('.scroll-up').css({"display":"block"});
               $('.scroll-down').css({"display":"block"});
-               
+                 $('#navigation').hide();  
       var a = $(document).scrollTop();
       if (a == "0"){
              $('.scroll-up').css({"display":"none"});
@@ -104,9 +104,6 @@ $('#footer').show()
                 $('#navigation').show();
       }
 
-      if (a == "100"){
-          $('#navigation').hide();  
-      }
 
       var scroll_down = $(document).height() - $(window).height();
             if ($(document).scrollTop() == scroll_down){
