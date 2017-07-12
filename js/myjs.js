@@ -57,7 +57,7 @@ $('.web').click(function(){
       $('.others, .ruby').css({"border-top":"3px solid #000"});
     $('#ruby, #others').fadeOut(function(){
       $('#web').fadeIn(function(){
-        // $('#works').css({"overflow-y":"auto"});
+        $('#works').css({"overflow-y":"auto"});
       });
     });
 });
@@ -68,7 +68,7 @@ $('.others').click(function(){
         $('.ruby, .web').css({"border-top":"3px solid #000"});
     $('#web, #ruby').fadeOut(function(){
       $('#others').fadeIn(function(){
-        // $('#works').css({"overflow-y":"auto"});
+        $('#works').css({"overflow-y":"auto"});
       });
     });
 });
