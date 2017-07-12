@@ -44,9 +44,12 @@ $('.ruby').click(function(){
     $(this).css({"border-top":"3px solid #fff"});
     $('#works').css({"overflow-y":"hidden"});
     $('.others, .web').css({"border-top":"3px solid #000"});
+
     $('#web, #others').fadeOut(function(){
       $('#ruby').fadeIn(function(){
+         // $('#web, #others').hide();
         $('#works').css({"overflow-y":"auto"});
+                 
       });
     });
 });
@@ -55,9 +58,12 @@ $('.web').click(function(){
     $(this).css({"border-top":"3px solid #fff"});
       $('#works').css({"overflow-y":"hidden"});
       $('.others, .ruby').css({"border-top":"3px solid #000"});
+     
     $('#ruby, #others').fadeOut(function(){
+      // $('#ruby, #others').hide();
       $('#web').fadeIn(function(){
         $('#works').css({"overflow-y":"auto"});
+           
       });
     });
 });
@@ -66,9 +72,12 @@ $('.others').click(function(){
     $(this).css({"border-top":"3px solid #fff"});
       $('#works').css({"overflow-y":"hidden"});
         $('.ruby, .web').css({"border-top":"3px solid #000"});
+
     $('#web, #ruby').fadeOut(function(){
+          // $('#web, #ruby').hide();
       $('#others').fadeIn(function(){
         $('#works').css({"overflow-y":"auto"});
+
       });
     });
 });

@@ -63,6 +63,10 @@ nav ul li{
 	text-transform: uppercase;
 }
 
+input{
+ width: 100%;
+}
+
 .close{
 	font-size: 1.5em;
 	position: absolute;
@@ -118,6 +122,16 @@ nav ul li{
 	padding: 30px 15px;
 }
 
+	.work-box{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	float: left;
+	color: #000;
+	padding-bottom: 30px;
+}
+
+
 
 }
 
@@ -128,6 +142,7 @@ nav ul li{
 	padding: 10px;
 	float: left;
 	color: #000;
+	padding-bottom: 30px;
 }
 
 }

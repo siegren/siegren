@@ -24,8 +24,12 @@ body{
 	display: block;
 	width: 100%;
 	height: 100vh;
-	background: #fff url('../img/bg.png') no-repeat fixed center;
+	background: #fff url('../img/bg2.png') no-repeat fixed center;
 	background-size: cover;
+}
+
+#main .fa{
+	font-size: 0.6em;
 }
 
 #navigation{
@@ -98,7 +102,7 @@ nav ul li:hover{
 /*CSS for information page*/
 #info{
 	display: none;
-	background: #fff;
+	background: #fff url('../img/abstract.png');
 	width: 100%;
 	height: 100vh;
 	color: #fff;
@@ -226,7 +230,7 @@ nav ul li:hover{
 }
 
 input{
- width: 80%;
+ width: 90%;
     height: 30px;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -262,7 +266,8 @@ input:focus{
 	height: 100vh;
 	display: none;
 	color: #fff;
-	/*overflow: hidden;*/
+	background: #fff url('../img/abstract.png');
+	position: relative;
 }
 
 #works .tab ul li{
@@ -280,6 +285,7 @@ input:focus{
 #ruby, #web, #others{
 	width: 100%;
 	padding: 30px 100px;
+	position: absolute;
 }
 
 #web, #others{
