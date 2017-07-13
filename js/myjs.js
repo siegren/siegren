@@ -4,7 +4,7 @@ $('.nav').click(function(){
   $('nav').slideDown();
 });
 
-$('.nav-close').click(function(){
+$('.particles').click(function(){
     $('nav').slideUp();
 });
 

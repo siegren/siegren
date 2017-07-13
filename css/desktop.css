@@ -88,7 +88,7 @@ nav{
 
 nav ul{
 	/*height: 100%;*/
-	padding-top: 10px;
+	padding: 30px;
 }
 nav ul li{
 	cursor: pointer;
@@ -102,7 +102,7 @@ nav ul li{
 	text-align: center;
 	line-height: 30px;
 	color: 	#fff;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	font-weight: bolder;
 	text-transform: uppercase;
 }
