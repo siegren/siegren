@@ -26,6 +26,7 @@ body{
 	height: 100vh;
 	background: #fff url('../img/bg2.png') no-repeat fixed center;
 	background-size: cover;
+	position:relative;
 }
 
 #main .fa{
