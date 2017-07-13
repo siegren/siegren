@@ -46,6 +46,7 @@ body{
 	border-right: 3px solid #000;
 	border-left: 3px solid #000;
 	opacity: 0.5;
+	margin-top: 5px;
 	float: left;	
 }
 
@@ -54,11 +55,12 @@ body{
 	width: 60px;
 	/*height: 60px;*/
 	display: block;
-	font-size: 3em;
+	font-size: 4em;
 	text-align: center;
 	padding: 5px;
 	position: relative;
-	top: -10px;
+	top: -20px;
+	right: -10px;
 		float: right;
 		cursor: pointer;
 /*	line-height: 100px*/
@@ -394,4 +396,17 @@ input:focus{
 	text-decoration: none;
 	font-weight: bolder;
 	text-transform: uppercase;
+}
+
+#footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 0.5em;
+	color: #fff;
+	padding-bottom: 3px;
+}
+
+#footer p{
+	text-align: center
 }
