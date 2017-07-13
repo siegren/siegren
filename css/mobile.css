@@ -184,3 +184,13 @@ input{
 		width: 100%;
 	}
 }
+
+@media only screen and (max-height: 570px){
+	body{
+		overflow-y: auto;
+	}
+	#main{
+		/*overflow-y: auto;*/
+		height: 600px;
+	}
+}
