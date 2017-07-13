@@ -175,6 +175,9 @@ nav ul li:hover{
 	line-height: 65px;
 	font-size: 2em;
 	text-transform: uppercase;
+    padding-left: 35px;
+    background: url(../img/logo.png) no-repeat 0 18px;
+    background-size: 30px;
 }
 
 .title-logo{
@@ -344,6 +347,7 @@ input:focus{
 	width: 100%;
 	padding: 30px 100px;
 	position: absolute;
+	background: #fff url('../img/abstract.png');
 }
 
 #web, #others{

@@ -57,7 +57,7 @@ $('.ruby').click(function(){
     $('#works').css({"overflow-y":"hidden"});
     $('.others, .web').css({"border-top":"3px solid #000"});
 
-    $('#web, #others').fadeOut('slow', function(){
+    $('#web').add($('#others')).fadeOut('slow', function(){
       $('#ruby').fadeIn(function(){
          // $('#web, #others').hide();
         $('#works').css({"overflow-y":"auto"});

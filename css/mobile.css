@@ -185,7 +185,7 @@ input{
 	}
 }
 
-@media only screen and (max-height: 570px){
+@media only screen and (max-height: 515px){
 	body{
 		overflow-y: auto;
 	}
