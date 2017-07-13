@@ -49,22 +49,49 @@ body{
 	float: left;	
 }
 
+.nav{
+	color: #fff;
+	width: 60px;
+	/*height: 60px;*/
+	display: block;
+	font-size: 3em;
+	text-align: center;
+	padding: 5px;
+	position: relative;
+	top: -10px;
+		float: right;
+		cursor: pointer;
+/*	line-height: 100px*/
+	/*border: 3px solid #fff;*/
+	/*background-color: #000;*/
+}
+
+.nav .fa{
+	margin-top: -60px;
+	padding: 0px;
+}
 nav{
-	float: right;
-	height: 100%;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.5);
+
 }
 
 nav ul{
-	height: 100%;
+	/*height: 100%;*/
 	padding-top: 10px;
 }
 nav ul li{
 	cursor: pointer;
-	display: inline-block;	
+	/*display: inline-block;	*/
+	text-align: center
 	padding: 10px;
 	height: 40px;
 	/*border: 3px solid #fff;*/
-	width: 190px;
+	width: auto;
 	opacity: 0.5;
 	text-align: center;
 	line-height: 30px;
@@ -85,12 +112,33 @@ nav ul li:hover{
   	background-image: -webkit-linear-gradient(left, transparent, #fff, transparent);
 }
 
+#main-profile{
+	width: 250px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 0px;
+	border: 2px solid silver;
+	border-radius: 100%;
+}
+
+.table{
+	display: table;
+	width: 100%;
+	height: 85%;
+}
+.middle{
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	/*border: 1px solid red;*/
+	width: 100%;
+}
 #name{
 	color: #fff;
 	text-align: center;
 	font-size: 5em;
 	font-weight: bolder;
-	padding-top: 150px;
+	padding-top: 10px;
 }
 
 #main h2{
@@ -106,7 +154,9 @@ nav ul li:hover{
 	width: 100%;
 	height: 100vh;
 	color: #fff;
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
 	overflow-y: auto;
 }
 
@@ -174,6 +224,7 @@ nav ul li:hover{
 #about{
 	color: #000;
 	display: block;
+		background: #fff url('../img/abstract.png');
 }
 
 .box{
@@ -220,6 +271,10 @@ nav ul li:hover{
 #contacts{
 	color: #000;
 	display: none;
+	position: absolute;
+	left:0px;
+	top: 120px;
+		background: #fff url('../img/abstract.png');
 }
 
 .box h1{
@@ -267,7 +322,9 @@ input:focus{
 	display: none;
 	color: #fff;
 	background: #fff url('../img/abstract.png');
-	position: relative;
+	position: absolute;
+	top: 0px;
+	left: 0px;
 }
 
 #works .tab ul li{

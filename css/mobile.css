@@ -30,13 +30,31 @@ nav ul li{
 	text-transform: uppercase;
 }
 
+#main-profile{
+	width: 30%;
+	margin-top: 0%;
+}
+
+.table{
+	display: table;
+	width: 100%;
+	height: 90%;
+}
+.middle{
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	/*border: 1px solid red;*/
+	width: 100%;
+}
+
 #name{
 	color: #fff;
 	text-align: center;
 	font-size: 3em;
 	font-weight: bolder;
 	padding: 0px 30px;
-	padding-top: 120px;
+	padding-top: 10px;
 }
 
 #main h2{
@@ -106,7 +124,15 @@ input{
 
 .box:last-child{
 	padding: 40px 30px;
+	padding-top: 10px;
 }
+
+#profile{
+	display: block;
+	margin: 0px auto;
+	border-radius: 100%;
+}
+
 
 /* works */
 
@@ -143,6 +169,10 @@ input{
 	float: left;
 	color: #000;
 	padding-bottom: 30px;
+}
+
+#main-profile{
+	width: 50%;
 }
 
 }

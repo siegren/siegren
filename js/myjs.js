@@ -1,8 +1,18 @@
+var id="";
+
+$('.nav').click(function(){
+  $('nav').slideDown();
+});
+
+$('.nav-close').click(function(){
+    $('nav').slideUp();
+});
+
 $('.about').click(function(){
   $(this).css({"border-top":"3px solid #fff"});
   $('.contacts').css({"border-top":"3px solid #000"});
-  $('#contacts').fadeOut(function(){
-      $('#about').fadeIn();
+  $('#contacts').fadeOut('slow', function(){
+      $('#about').fadeIn('slow');
   });
 
 });
@@ -10,32 +20,34 @@ $('.about').click(function(){
 $('.contacts').click(function(){
   $(this).css({"border-top":"3px solid #fff"});
   $('.about').css({"border-top":"3px solid #000"});
-  $('#about').fadeOut(function(){
-      $('#contacts').fadeIn();
+  $('#about').fadeOut('slow', function(){
+      $('#contacts').fadeIn('slow');
   });
 
 });
 
 $('.info').click(function(){
+  id='#'+this.className;
   $('.about').click();
+    $('nav').fadeOut();
   $('#main').fadeOut('slow', function(){
     $('#info').fadeIn('slow');
+    
   });
 });
 
 $('.works').click(function(){
+    id='#'+this.className;
   $('.ruby').click();
+    $('nav').fadeOut();
   $('#main').fadeOut('slow', function(){
     $('#works').fadeIn('slow');
+
   });
 });
 
 $('.close').click(function(){
-  $('#info').fadeOut('slow', function(){
-    $('#main').fadeIn('slow');
-  });  
-
-    $('#works').fadeOut('slow', function(){
+  $(id).fadeOut('slow', function(){
     $('#main').fadeIn('slow');
   });  
 });
@@ -45,7 +57,7 @@ $('.ruby').click(function(){
     $('#works').css({"overflow-y":"hidden"});
     $('.others, .web').css({"border-top":"3px solid #000"});
 
-    $('#web, #others').fadeOut(function(){
+    $('#web, #others').fadeOut('slow', function(){
       $('#ruby').fadeIn(function(){
          // $('#web, #others').hide();
         $('#works').css({"overflow-y":"auto"});
@@ -59,7 +71,7 @@ $('.web').click(function(){
       $('#works').css({"overflow-y":"hidden"});
       $('.others, .ruby').css({"border-top":"3px solid #000"});
      
-    $('#ruby, #others').fadeOut(function(){
+    $('#ruby, #others').fadeOut('slow', function(){
       // $('#ruby, #others').hide();
       $('#web').fadeIn(function(){
         $('#works').css({"overflow-y":"auto"});
@@ -68,12 +80,14 @@ $('.web').click(function(){
     });
 });
 
+
+
 $('.others').click(function(){
     $(this).css({"border-top":"3px solid #fff"});
       $('#works').css({"overflow-y":"hidden"});
         $('.ruby, .web').css({"border-top":"3px solid #000"});
 
-    $('#web, #ruby').fadeOut(function(){
+    $('#web, #ruby').fadeOut('slow', function(){
           // $('#web, #ruby').hide();
       $('#others').fadeIn(function(){
         $('#works').css({"overflow-y":"auto"});
