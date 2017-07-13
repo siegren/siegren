@@ -9,9 +9,7 @@
 
 #logo{
 	height: 100%;
-	border-right: 3px solid #000;
-	border-left: 3px solid #000;
-	opacity: 0.5;
+	opacity: 0.9;
 	float: left;	
 }
 
