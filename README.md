@@ -16,13 +16,13 @@ My portfolio website is single page website and mobile first so it looks good in
 
 ## Screenshots
 
-Home Page
+#### Home Page
 ![Home Page](img/main.png)
 
-Information Page
+#### Information Page
 ![About Page](img/about.png)
 
-Works Page
+#### Works Page
 ![Work Page](img/works.png)
 
 
