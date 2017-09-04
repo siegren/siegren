@@ -323,7 +323,14 @@ input:focus{
 	font-size: 5em;
 	text-align: center;
 }
-		 
+
+#social a{
+	color:#000;
+}
+
+#social a:visited{
+	color: #000;
+}		 
 /* works */
 #works{
 	width: 100%;
