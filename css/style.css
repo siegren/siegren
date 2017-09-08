@@ -139,8 +139,8 @@ a {
     background: rgba(255, 255, 255, 0.1); }
 
 .content-section {
-  padding-top: 100px !important;
-  padding-bottom: 100px !important; }
+  padding-top: 150px !important;
+  padding-bottom: 150px !important; }
 
   #tools {
   /*padding-top: 50px !important;*/
@@ -320,6 +320,8 @@ body {
 #why{
   background: url("../img/anime.jpg") no-repeat top center scroll;
   background-size: cover;
+  padding-top: 200px !important; 
+  padding-bottom: 200px !important;
 }
 
 .why-container{
